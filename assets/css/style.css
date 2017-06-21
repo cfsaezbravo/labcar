@@ -3,7 +3,7 @@
 .registro{
 	background-image: url(../../docs/img/taxi.jpg);
 	height: 100vh;
-	width: auto;
+	/*width: 100vw;*/
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center bottom;
@@ -19,5 +19,29 @@
 /*Sección descarga*/
 
 .descarga{
+	background-color: #f7b617;
+}
+
+/*Sección conduce*/
+
+.conduce{
+	background-image: url(../../docs/img/conduce.jpg);
+	height: 80vh;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.info-conduce{
+	background-color: black;
+	color: white;
+	margin-top: 95px;
+    padding: 35px;
+}
+
+/*Sección Tarifas*/
+
+.tarifas{
 	background-color: #f7b617;
 }
