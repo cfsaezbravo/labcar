@@ -1,1 +1,17 @@
-style.css
+/*Header*/
+
+.registro{
+	background-image: url(../../docs/img/taxi.jpg);
+	height: 100vh;
+	width: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+.info-usuario {
+    background-color: #f7b617;
+    padding: 25px;
+    margin-top: 145px;
+}
