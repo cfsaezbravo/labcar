@@ -46,6 +46,13 @@
 
 .tarifas{
 	background-color: #f7b617;
+	height: 80vh;
+}
+
+#map{
+	height: 400px;
+	width: 400px;
+	margin-top: 40px;
 }
 
 
