@@ -1,0 +1,49 @@
+/*Seccion nav*/
+@media only screen and (min-width: 1px) and (max-width: 615px){
+	img.logo{
+		width: 70%;
+	}
+	.navbar-toggle {
+		float: left;
+	}
+}
+
+/*Header*/
+
+@media only screen and (min-width: 616px) and (max-width: 2024px){
+	.info-usuario2{
+		display: none;
+	}
+}
+
+/*Descarga*/
+
+@media only screen and (min-width: 1px) and (max-width: 615px){
+	.info-conduce{
+		width: 96vw;
+		margin-right: 10px;
+	}
+}
+
+/*Tarifa*/
+
+@media only screen and (min-width: 1px) and (max-width: 615px){
+	#map{
+		display: none;
+	}
+}
+
+/*Footer*/
+@media only screen and (min-width: 1px) and (max-width: 615px){
+	.fila-1 ul{
+		padding-left: 0px;
+	}
+
+	.fila-2{
+		display: none;
+	}
+
+	#market{
+		margin-top: 0px;
+	}
+}
