@@ -12,4 +12,34 @@ function initMap() {
 			navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
 		}
 	}
+
+var start = document.getElementById('origen');
+	var end = document.getElementById('destino');
+
+	new google.maps.places.Autocomplete(start);
+	new google.maps.places.Autocomplete(end);
+
+	var directionsService = new google.maps.DirectionsService;
+	var directionsDisplay = new google.maps.DirectionsRenderer;
+
+	var calcularRuta = function(directionsService,directionsDisplay){
+		directionsService.route({
+		origin: start.value,
+		destination: end.value,
+		travelMode: 'DRIVING'
+		}, function (response,status){
+			if (status === 'OK') {
+	      	directionsDisplay.setDirections(response);
+	    	}else{
+			window.alert("No encontramos una ruta");
+			}
+		})
+	};
+
+		directionsDisplay.setMap(map);
+		var trazarRuta = function(){
+			calcularRuta(directionsService,directionsDisplay);
+		};
+
+		document.getElementById("ruta").addEventListener('click', trazarRuta);  
 };
