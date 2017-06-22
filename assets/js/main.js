@@ -13,7 +13,9 @@ function initMap() {
 		}
 	}
 
-var start = document.getElementById('origen');
+	window.addEventListener('load', buscar);
+
+	var start = document.getElementById('origen');
 	var end = document.getElementById('destino');
 
 	new google.maps.places.Autocomplete(start);

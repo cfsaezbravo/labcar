@@ -5,23 +5,25 @@
 	height: 70px;
 }
 
+.navbar-toggle{
+	background-color: white;
+}
+
 /*Header*/
 
 .registro{
 	background-image: url(../../docs/img/taxi.jpg);
-	height: 100vh;
-	width: 100%;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: bottom;
 	background-repeat: no-repeat;
+	height: 100vh;
 }
 
 .info-usuario {
     background-color: #f7b617;
     padding: 25px;
     margin-top: 145px;
-    width: 474px;
     color: white;
 }
 
@@ -33,10 +35,18 @@
 	height: 18px;
 }
 
-.info-usuario input{
-	display: block;
+.info-usuario2{
+	background-color: #f7b617;
+	margin-top: 208px;
+	height: 295px;
+	padding: 45px;
+	padding-left: 57px;
+	color: white;
 }
 
+.info-usuario2 .btn{
+	margin-top: 25px;
+}
 
 /*Sección descarga*/
 
@@ -145,7 +155,7 @@
 .footer ul li a{
 	text-decoration: none;
 	color: white;
-	margin: 85px;
+	margin: 35px;
 }
 
 .rrss{

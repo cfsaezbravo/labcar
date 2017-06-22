@@ -7,6 +7,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media.css">
 </head>
 <body>
 
@@ -15,17 +16,17 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">	
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
 				<a href="#" class="navbar-brand">
-					<img src="docs/img/logo.png">
+					<img class='logo' src="docs/img/logo.png">
 				</a>
 			</div>
-			<div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#viaja">Viaja</a></li>
 					<li><a href="#conduce">Conduce</a></li>
@@ -41,14 +42,19 @@
 		<header>
 			<div class="container-fluid registro">
 				<div class="row">
-					<div class="col-lg-offset-8 col-md-offset-8 col-sm-12 col-xs-12 info-usuario">
+					<div class="col-lg-offset-8 col-md-offset-8 col-sm-12 col-xs-12 hidden-xs info-usuario">
 						<h2>Disfruta del viaje</h2>
 						<h2>Eres dueño de tu tiempo</h2>
 						<h3>Viaja con <img src="docs/img/logo-blanco.png" alt=""></h3>
-						<label for="form">REGÍSTRATE</label>
-						<input type="text">
-						<p>O bien</p>
-						<button type='button' class='btn btn-default'>Conviértete en un conductor</button>
+						<label class='registro2' for="form">REGÍSTRATE</label>
+						<input class='formocultar' type="text">
+						<p class='formocultar'>O bien</p>
+						<button type='button' class='btn btn-default conviertete'>Conviértete en un conductor</button>
+					</div>
+					<div class="col-xs-offset-3 info-usuario2">
+						<h2>Comienza a viajar con</h2>
+						<img src="docs/img/logo-blanco.png" alt="">
+						<button type="button" class='btn btn-default'>Descarga el app</button>
 					</div>
 				</div>
 			</div>
@@ -77,7 +83,7 @@
 	<section>
 		<div class="container-fluid conduce">
 			<div class="row">
-				<div class="col-lg-offset-8 col-md-offset-8 col-sm-12 col-xs info-conduce">
+				<div class="col-lg-offset-8 col-md-offset-8 col-sm-12 col-xs-12 info-conduce">
 					<h3>Conduce cuando quieras</h3>
 					<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
 					<button type='button' class='btn btn-default'>Conviértete en conductor</button>
@@ -129,7 +135,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4 col-md-5 col-sm-6 col-xs-6">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 fila-1">
 						<ul>
 							<li><a href="#">Viaja</a></li>
 							<li><a href="#">Conduce</a></li>
@@ -141,7 +147,7 @@
 							<li><a href="#">Seguridad</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-4 col-md-5 col-sm-6 col-xs-6">
+					<div class="col-lg-3 col-md-3 fila-2">
 						<ul>
 							<li><a href="#">Oportunidades</a></li>
 							<li><a href="#">Nuestra historia</a></li>
@@ -153,7 +159,7 @@
 							<li><a href="#">Coders</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-4 col-md-5 col-sm-4 col-xs-4" id="market">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" id="market">
 						<img class="market" src="docs/img/app-store.png" alt="">
 						<img class="market" src="docs/img/google-play.png" alt="">
 					</div>
@@ -161,7 +167,7 @@
 			</div>
 			<div class="container-fluid iconos">
 				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 rrss">
+					<div class="col-lg-12 col-md-12 col-sm-6 col-xs-6 rrss">
 						<i class="fa fa-facebook" aria-hidden="true"></i>
 						<i class="fa fa-twitter" aria-hidden="true"></i>
 						<i class="fa fa-instagram" aria-hidden="true"></i>
