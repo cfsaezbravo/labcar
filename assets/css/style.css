@@ -1,3 +1,10 @@
+/*Navbar*/
+
+.navbar{
+	background-color: white;
+	height: 70px;
+}
+
 /*Header*/
 
 .registro{
@@ -15,7 +22,21 @@
     padding: 25px;
     margin-top: 145px;
     width: 474px;
+    color: white;
 }
+
+.info-usuario h3{
+	font-weight: lighter;
+}
+
+.info-usuario img{
+	height: 18px;
+}
+
+.info-usuario input{
+	display: block;
+}
+
 
 /*Sección descarga*/
 
@@ -26,8 +47,13 @@
   padding: 5% 20% 5% 5%;
 }
 
+.descarga h3{
+	font-size: 34px;
+}
+
 .descarga p{
   font-weight: lighter;
+  font-size: 18px;
 }
 
 .descarga img{
@@ -55,15 +81,33 @@
     padding: 35px;
     width: 474px;
     height: 70vh;
+    line-height: 2;
+}
+
+.conduce h3{
+	font-size: 34px;
+}
+
+.conduce p{
+    font-size: 18px;
+    font-weight: lighter;
 }
 
 /*Sección Tarifas*/
 
 .tarifas{
-  font-size: 16px;
   padding: 3% 10%;
   background-color: #f7b617;
   color: #fff;
+}
+
+.tarifas h3{
+	font-size: 34px;
+}
+
+.tarifas p{
+    font-size: 18px;
+    font-weight: lighter;
 }
 
 #map{
