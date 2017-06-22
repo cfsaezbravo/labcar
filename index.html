@@ -60,10 +60,10 @@
 	<section>
 		<div class="container-fluid descarga">
 			<div class="row">
-				<div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 					<img src="docs/img/celular.png" alt="">
 				</div>
-				<div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 					<h3>Descarga la nueva app</h3>
 					<p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
 					<p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
@@ -80,7 +80,7 @@
 				<div class="col-lg-offset-8 col-md-offset-8 col-sm-12 col-xs info-conduce">
 					<h3>Conduce cuando quieras</h3>
 					<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-					<button>Conviértete en conductor</button>
+					<button type='button' class='btn btn-default'>Conviértete en conductor</button>
 				</div>
 			</div>
 		</div>
@@ -90,16 +90,28 @@
 
 		<div class="container-fluid tarifas">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<h3>Tarifas</h3>
 					<p>Consulta las tarifas LabCar aquí</p>
-					<label for="form">icon</label>
-					<input type="text">
-					<label for="form">icon</label>
-					<input type="text">
-					<button>¡TRAZAR RUTA!</button>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+							<img src="docs/img/circulo.png" alt="">
+							<input placeholder='Introduzca punto de partida' class='input-tarifas text-center' type="text">
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+							<img src="docs/img/flecha.png" alt="">
+							<input placeholder='Introduzca su destino' class='input-tarifas text-center' type="text">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 button text-center">
+							<button>¡TRAZAR RUTA!</button>
+						</div>
+					</div>
 				</div>
-				<div id='map' class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div id='map' class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right">
 						<!--Aquí va el mapa-->
 				</div>
 			</div>
